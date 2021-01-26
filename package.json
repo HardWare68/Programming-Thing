@@ -17,7 +17,4 @@
     "url": "https://github.com/HardWare68/Programming-Thing/issues"
   },
   "homepage": "https://github.com/HardWare68/Programming-Thing#readme",
-  "dependencies": {
-    "file": "^0.2.2"
-  }
 }
