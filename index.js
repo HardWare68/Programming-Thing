@@ -14,20 +14,21 @@ while(String(continueLoop).toLowerCase() == "true"){
   //uses the testFile function thingy
   testFile.whatAmIDoing();
 
-  //this just displays stuff to the screen, if you dunno how to do that
-  console.log("I forget how to do JS");
-
   //first, ask the user whats 9 + 10
   var num = Number(scanner("What's nine plus ten? "));
 
   //select an outcome based on what they inputed
-  //i will probably make this a switch statement later lol
-  if (num == 21){
-    console.log("You stupid");
-  } else if (num == 19) {
-    console.log("That is correct");
-  } else {
-    console.log("No");
+  switch(num){
+    case 19:
+      console.log("Correct");
+      break;
+
+    case 21:
+      console.log("You stupid");
+      break;
+    
+    default:
+      console.log("no");
   }
 
   //ask if they wanna continue or not
