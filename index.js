@@ -30,6 +30,6 @@ while(String(continueLoop).toLowerCase() == "true"){
     console.log("No");
   }
 
+  //ask if they wanna continue or not
   continueLoop = scanner('Do you wish to continue? Enter "true" or "false."');
-  console.log(continueLoop);
 }
