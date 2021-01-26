@@ -1,0 +1,23 @@
+{
+  "name": "Programming-Thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HardWare68/Programming-Thing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HardWare68/Programming-Thing/issues"
+  },
+  "homepage": "https://github.com/HardWare68/Programming-Thing#readme",
+  "dependencies": {
+    "file": "^0.2.2"
+  }
+}
