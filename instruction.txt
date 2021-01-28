@@ -3,7 +3,9 @@ instructions on how to do stuff:
 step one.) Create an account on repl.it. Repl is just a very easy thing to code from your browser
 Step two.) Visit the replit link, then create a fork. This will allow you to make your own copy of the code and edit it from there
 Step three.) Code and do stuff
-Step four.) Go to the left and check version control. From there, it'll have a little thing about GitHub.
-Step Five.) Write a short thing on what you did, then commit and push
-
-(It seems like it's stuck into being logged into my account and connected to me. No idea how to fix that ): )
+Step four.) Once you are done, download all the stuff, then unzip it
+Step five.) Go to the GitHub repo, and then upload all the stuff and make a new branch for it
+Step six.) Create a pull request for merging the two branches or something?
+Step seven.) Merge the two branches???
+Step eight.) Ask each other what we should do since I have no idea ):
+Step nine.) Profit

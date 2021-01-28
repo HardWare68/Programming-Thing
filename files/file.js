@@ -5,7 +5,7 @@ function whatAmIDoing(){
 
 //test stuff again
 function testStuffAgain(){
-  console.log("epic");
+  console.log("Hello #alex-post-archives!");
 }
 
 //export this bad boy
