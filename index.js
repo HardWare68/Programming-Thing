@@ -1,6 +1,6 @@
 // /!\ please comment all your stuff please :^) /!\
 
-const testFile = require("./file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
+const testFile = require("./files/file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
 // stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
 
 const scanner = require('prompt-sync')({sigint: true}); //USE THIS TO GET INPUT. NIFTY URL: https://www.codecademy.com/articles/getting-user-input-in-node-js
@@ -13,6 +13,7 @@ var continueLoop = true;
 while(String(continueLoop).toLowerCase() == "true"){
   //uses the testFile function thingy
   testFile.whatAmIDoing();
+  testFile.testStuffAgain();
 
   //first, ask the user whats 9 + 10
   var num = Number(scanner("What's nine plus ten? "));
@@ -32,5 +33,5 @@ while(String(continueLoop).toLowerCase() == "true"){
   }
 
   //ask if they wanna continue or not
-  continueLoop = scanner('Do you wish to continue? Enter "true" or "false."');
+  continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
 }
