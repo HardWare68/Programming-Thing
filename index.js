@@ -2,6 +2,7 @@
 
 const testFile = require("./files/file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
 // stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
+const rolimonStuff = require("./files/rolimonStuff");
 
 const scanner = require('prompt-sync')({ sigint: true }); //USE THIS TO GET INPUT. NIFTY URL: https://www.codecademy.com/articles/getting-user-input-in-node-js
 
@@ -14,6 +15,8 @@ while (String(continueLoop).toLowerCase() == "true") {
   //uses the testFile function thingy
   testFile.whatAmIDoing();
   testFile.testStuffAgain();
+
+  rolimonStuff.rolimonRequest();
 
   //first, ask the user whats 9 + 10
   var num = Number(scanner("What's nine plus ten? "));

@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/HardWare68/Programming-Thing#readme",
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.88.2"
   }
 }
