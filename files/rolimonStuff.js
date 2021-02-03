@@ -14,7 +14,9 @@ async function rolimonRequest(){
       console.error("Bad Request, issue:", res.statusText);
     }
     const html = cheerio.load(res.data);
-    console.log(html.root().children()[0].lastChild.tagName);
+    console.log(html.root().children()[0].lastChild);
+    //html.root().children()[0].lastChild.tagName
+    //this is what my friend gave to me, keeping it here for safe usage
   } catch (error) {
     console.error("Axios error", error);
   }
