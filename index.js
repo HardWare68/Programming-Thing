@@ -39,9 +39,6 @@ while (String(continueLoop).toLowerCase() == "true") {
       console.log("no");
   }
 
-  //ask if they wanna continue or not
-  continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
-
   //ask the user which is heavier
   var weight = String(scanner("Which is heavier: a pound of steel or a pound of feathers? "));
 
