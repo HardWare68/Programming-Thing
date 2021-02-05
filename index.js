@@ -31,10 +31,39 @@ while (String(continueLoop).toLowerCase() == "true") {
       console.log("You stupid");
       break;
 
+    case 87:
+      console.log("WAS THAT THE BITE OF 87");
+      break;
+
     default:
       console.log("no");
   }
 
   //ask if they wanna continue or not
   continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
+
+  //ask the user which is heavier
+  var weight = String(scanner("Which is heavier: a pound of steel or a pound of feathers? "));
+
+  //what they put in
+  switch (weight) {
+    case "feathers":
+      console.log("idiot");
+      break;
+    
+    case "steel":
+      console.log("idiot");
+      break;
+    
+    case "neither":
+      console.log("good job");
+      break;
+
+    default:
+      console.log("no");
+  }
+
+  //ask if they wanna continue or not
+  continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
+  
 }
