@@ -13,7 +13,7 @@ var continueLoop = true;
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
 
-  rolimonStuff.rolimonRequest();
+  //rolimonStuff.rolimonRequest();
 
   testFile.ninePlusTen();
 
