@@ -1,17 +1,3 @@
-<<<<<<< HEAD:files/file.js
-//this function prints stuff to the screen
-function whatAmIDoing(){
-  console.log("lmaoooo");
-}
-
-//test stuff again
-function testStuffAgain(){
-  console.log("Hello #alex-post-archives!");
-}
-
-//export this bad boy
-module.exports = { whatAmIDoing, testStuffAgain };
-=======
 const scanner = require('prompt-sync')({ sigint: true });
 const fs = require('fs'); //working with json can be found right in here: https://attacomsian.com/blog/nodejs-read-write-json-files
 
@@ -83,4 +69,3 @@ function readJSON(){
 
 //export this bad boy
 module.exports = {ninePlusTen, steelOrFeathers, readJSON};
->>>>>>> hardwares-cool-branch:files/javascript/file.js
