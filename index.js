@@ -2,6 +2,7 @@
 
 const testFile = require("./files/javascript/file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
 // stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
+const btnExit = require("./files/javascript/okay");
 const rolimonStuff = require("./files/javascript/rolimonStuff");
 const ticTacToe = require("./files/javascript/ticTacToe");
 
@@ -13,10 +14,8 @@ var continueLoop = true;
 //its gonna loop everything in here while they say true
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
-
+  btnExit.bananas();
   //rolimonStuff.rolimonRequest();
-
-  testFile.ninePlusTen();
 
   testFile.readJSON();
 
