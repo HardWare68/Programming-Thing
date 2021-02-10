@@ -18,13 +18,13 @@ function printBoard(){
 }
 
 function isLegalMove(nextMoveParam){
-  try{
+  try {
     if(gameBoard[nextMoveParam[0]][nextMoveParam[1]] == ""){
       isLegalMoveVar = true;
     } else {
       isLegalMoveVar = false;
     }
-  } catch (e){
+  } catch (e) {
     isLegalMoveVar = false;
   }
 }
@@ -91,13 +91,13 @@ function ticTacToe(){
     //loop until they give us a legal move
     while(!isLegalMoveVar){
       //prompt user for input
-      var nextMoveOne = scanner("Enter your move! (Format it like so: \"row,column\")").split("[,]");
+      var nextMoveOne = scanner("Enter your move! (Format it like so: \"row,column\")").split(",");
 
       //get the next move, and hopefully split it into an array
       //with correct regex. how the hell do i even regex????
         try {
-          nextMove[0] = Integer.parseInt(nextMoveOne[0]);
-          nextMove[1] = Integer.parseInt(nextMoveOne[1]);
+          nextMove[0] = parseInt(nextMoveOne[0]);
+          nextMove[1] = parseInt(nextMoveOne[1]);
         } catch(e) {
           isLegalMoveVar = false;
         }
