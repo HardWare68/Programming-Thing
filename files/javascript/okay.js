@@ -11,23 +11,23 @@ class trolls{
   }
 }
 
-function bananas(){
-  console.log(fortniteCard[19]);
-  if(wants == "who"){
-    console.log("Yes, I'm giving it away.");
-  }
-  share();
-  share();
-  share();
-  trolls.status = trolls.blocked();
-  console.log(trolls.status);
-}
-
 function share(){
   if(flag == false){
     flag = true;
     console.log("And remember");
   }
+}
+
+function bananas(){
+  console.log(fortniteCard[19]); //19 dollar fortnite card
+  if(wants == "who"){ //who wants it?
+    console.log("Yes, I'm giving it away.");
+  }
+  share(); //share, share, share!
+  share();
+  share();
+  trolls.status = trolls.blocked(); //and trolls, don't get blocked
+  console.log(trolls.status);
 }
 
 module.exports = {bananas};
