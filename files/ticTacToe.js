@@ -24,7 +24,7 @@ function isLegalMove(nextMoveParam){
     } else {
       isLegalMoveVar = false;
     }
-  } catch (ArrayIndexOutOfBoundsException){
+  } catch (e){
     isLegalMoveVar = false;
   }
 }
@@ -75,8 +75,9 @@ function isGameWonFunction(){
     }
     //im so sorry to all my programming friends who had to scroll through a thousand if statements
   }
+
 function ticTacToe(){
-  while(isGameWonVar){
+  while(!isGameWonVar){
     //print the board
     printBoard();
 
@@ -98,13 +99,7 @@ function ticTacToe(){
           nextMove[0] = Integer.parseInt(nextMoveOne[0]);
           nextMove[1] = Integer.parseInt(nextMoveOne[1]);
         } catch(e) {
-          if (e instanceof ArrayIndexOutOfBoundsException) {
-            isLegalMoveVar = false;
-            continue;
-          } else if (e instanceof NumberFormatException) {
-            isLegalMoveVar = false;
-            continue;
-          }
+          isLegalMoveVar = false;
         }
 
       //check if it's a legal move
@@ -126,7 +121,7 @@ function ticTacToe(){
     }
 
     //check if anyone has won
-    isGameWon();
+    isGameWonFunction();
 
     //check if the board is full
     isBoardFull();
