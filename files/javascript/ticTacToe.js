@@ -9,6 +9,8 @@ var nextMove = [0, 0]; //the next move
 
 const scanner = require('prompt-sync')({ sigint: true });
 
+//function that print the board
+//it do be printing
 function printBoard(){
   console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2] + " | ");
   console.log("--------");
@@ -17,6 +19,8 @@ function printBoard(){
   console.log(gameBoard[2][0] + " | " + gameBoard[2][1] + " | " + gameBoard[2][2] + " | ");
 }
 
+//function that checks if the move is illegal
+//when the move is wanted for 7 war crimes! :flushed:
 function isLegalMove(nextMoveParam){
   try {
     if(gameBoard[nextMoveParam[0]][nextMoveParam[1]] == ""){
@@ -29,6 +33,8 @@ function isLegalMove(nextMoveParam){
   }
 }
 
+//function that checks if the board if full
+//im sorry that this if statement looks like a cancerous tumour
 function isBoardFull(){
   if(gameBoard[0][0] != "" && gameBoard[0][1] != "" && gameBoard[0][2] != "" && gameBoard[1][0] != "" && gameBoard[1][1] != "" && gameBoard[1][2] != "" && gameBoard[2][0] != "" && gameBoard[2][1] != "" && gameBoard[2][2] != ""){
     isBoardFullVar = true;
@@ -37,6 +43,7 @@ function isBoardFull(){
   }
 }
 
+//im sorry again
 function isGameWonFunction(){
     //if first row is equal
     if(gameBoard[0][0] == gameBoard[0][1] && gameBoard[0][1] == gameBoard[0][2] && gameBoard[0][0] == gameBoard[0][2] && gameBoard[0][0] != "" && gameBoard[0][1] != "" && gameBoard[0][2] != ""){
@@ -76,6 +83,7 @@ function isGameWonFunction(){
     //im so sorry to all my programming friends who had to scroll through a thousand if statements
   }
 
+//the actual tic-tac-toe jazz
 function ticTacToe(){
   while(!isGameWonVar){
     //print the board
