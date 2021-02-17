@@ -14,19 +14,23 @@ var continueLoop = true;
 //its gonna loop everything in here while they say true
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
-  btnExit.bananas();
-  //rolimonStuff.rolimonRequest();
+  
+  var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"))
+  switch (select){
+    case 1:
+      btnExit.bananas();
+      //rolimonStuff.rolimonRequest();
+      //lmao rolimon stuff doesnt work lol
 
-  testFile.readJSON();
+      testFile.readJSON();
 
-  testFile.steelOrFeathers();
+      testFile.steelOrFeathers();
+      break;
 
-
-  var playTicTacToe = scanner("Do you want to play tic-tac-toe? Enter \"True\" or \"False\"").toLowerCase();
-  if(playTicTacToe == "true"){
-    ticTacToe.ticTacToe();
+    case 2:
+      ticTacToe.ticTacToe();
+      break;
   }
-
   //ask if they wanna continue or not
   continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
   
