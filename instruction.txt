@@ -9,3 +9,6 @@ Step six.) Create a pull request for merging the two branches or something?
 Step seven.) Merge the two branches???
 Step eight.) Ask each other what we should do since I have no idea ):
 Step nine.) Profit
+
+instructions on testing:
+Inside the thisIsAFile.json file, there is a property called "testing." If you are testing stuff, set it to true. If you are committing to master or something of the sort, set it to false.
