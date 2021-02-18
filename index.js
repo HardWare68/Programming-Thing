@@ -9,29 +9,45 @@ const ticTacToe = require("./files/javascript/ticTacToe");
 const scanner = require('prompt-sync')({ sigint: true }); //USE THIS TO GET INPUT. NIFTY URL: https://www.codecademy.com/articles/getting-user-input-in-node-js
 
 var continueLoop = true;
+var testing = testFile.readJSON().testing;
 
 // main loop of the program
 //its gonna loop everything in here while they say true
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
   
-  var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"))
+  if(testing){
+    var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"));
+  } else {
+    console.log("Testing is false. Defaulting select to 1...");
+    var select = 1;
+  }
   switch (select){
     case 1:
       btnExit.bananas();
       //rolimonStuff.rolimonRequest();
       //lmao rolimon stuff doesnt work lol
 
-      testFile.readJSON();
-
-      testFile.steelOrFeathers();
+      if(testing){
+        testFile.steelOrFeathers();
+      } else {
+        console.log("Testing is false. Skipping steelOrFeathers...");
+      }
       break;
 
     case 2:
-      ticTacToe.ticTacToe();
+      if(testing){
+        ticTacToe.ticTacToe();
+      } else {
+        console.log("Testing is false. Skipping ticTacToe...")
+      }
       break;
   }
   //ask if they wanna continue or not
-  continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
-  
+  if(testing){
+    continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
+  } else {
+    console.log("Testing is false. Defaulting continueLoop to false...")
+    continueLoop = false;
+  }
 }

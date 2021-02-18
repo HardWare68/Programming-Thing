@@ -29,7 +29,7 @@ function ninePlusTen(){
 
 function steelOrFeathers(){
   //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
-  var weight = String(scanner("Which is heavier: a pound of steel or a pound of feathers? ")).toLowerCase();
+  var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
 
   //what they put in
   switch (weight) {
@@ -60,7 +60,7 @@ function readJSON(){
     // parse JSON string to JSON object
     const jsonOBJ = JSON.parse(data);
 
-    console.log(jsonOBJ.message);
+    return jsonOBJ;
 
   } catch (err) {
     console.log(`Error reading file from disk: ${err}`);
