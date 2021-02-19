@@ -9,13 +9,15 @@ const ticTacToe = require("./files/javascript/ticTacToe");
 const scanner = require('prompt-sync')({ sigint: true }); //USE THIS TO GET INPUT. NIFTY URL: https://www.codecademy.com/articles/getting-user-input-in-node-js
 
 var continueLoop = true;
-var testing = testFile.readJSON().testing;
+var testing = testFile.readJSON().testing; //imports the object from "thisIsAFile.json" then looks for the testing property
 
 // main loop of the program
 //its gonna loop everything in here while they say true
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
   
+  //if we are testing, skip asking for user input.
+  //this makes TravisCI work
   if(testing){
     var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"));
   } else {
@@ -23,18 +25,20 @@ while (String(continueLoop).toLowerCase() == "true") {
     var select = 1;
   }
   switch (select){
+    //case 1: testing random function
     case 1:
-      btnExit.bananas();
+      btnExit.bananas(); //19 dollar fortnite gift card
       //rolimonStuff.rolimonRequest();
       //lmao rolimon stuff doesnt work lol
 
       if(testing){
-        testFile.steelOrFeathers();
+        testFile.steelOrFeathers(); //I got a question for ya
       } else {
         console.log("Testing is false. Skipping steelOrFeathers...");
       }
       break;
 
+    //case 2: tic-tac-toe
     case 2:
       if(testing){
         ticTacToe.ticTacToe();
