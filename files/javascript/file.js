@@ -36,19 +36,16 @@ function steelOrFeathers(paramWeight){
   //what they put in
   switch (paramWeight) {
     case "feathers":
-      console.log("idiot");
-      break;
+      return "idiot";
     
     case "steel":
-      console.log("That's right. It's a kilogram o steel, because steel is heavier than feathers!");
-      break;
+      return "That's right. It's a kilogram o steel, because steel is heavier than feathers!";
     
     case "neither":
-      console.log("good job");
-      break;
+      return "Good job";
 
     default:
-      console.log("no");
+      return "No";
   }
   //prints a blank line just for neatness sake
   console.log();

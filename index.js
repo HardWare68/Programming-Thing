@@ -34,7 +34,7 @@ while (String(continueLoop).toLowerCase() == "true") {
       if(testing){
         //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
         var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
-        testFile.steelOrFeathers(weight); //I got a question for ya
+        console.log(testFile.steelOrFeathers(weight)); //I got a question for ya
       } else {
         console.log("Testing is false. Skipping steelOrFeathers...");
       }
