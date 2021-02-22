@@ -1,6 +1,11 @@
 const scanner = require('prompt-sync')({ sigint: true });
 const fs = require('fs'); //working with json can be found right in here: https://attacomsian.com/blog/nodejs-read-write-json-files
 
+//intentionally breaks the program. lol!
+function intentionallyBreak(){
+  //idk if its right or not, but it breaks. lol!
+  throw intentionalException;
+}
 
 function ninePlusTen(){
   //first, ask the user whats 9 + 10
@@ -68,4 +73,4 @@ function readJSON(){
 }
 
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, readJSON};
+module.exports = {ninePlusTen, steelOrFeathers, readJSON, intentionallyBreak};
