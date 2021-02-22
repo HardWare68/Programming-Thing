@@ -25,7 +25,7 @@ while (String(continueLoop).toLowerCase() == "true") {
     var select = 1;
   }
   switch (select){
-    //case 1: testing random function
+    //case 1: testing random functions
     case 1:
       btnExit.bananas(); //19 dollar fortnite gift card
       //rolimonStuff.rolimonRequest();
