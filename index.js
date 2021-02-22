@@ -36,7 +36,9 @@ while (String(continueLoop).toLowerCase() == "true") {
       } else {
         console.log("Testing is false. Skipping steelOrFeathers...");
       }
-      testFile.intentionallyBreak(69);
+      //DONT UNCOMMENT THIS LINE
+      //IT BREAKS EVERYTHING. LOL!
+      //testFile.intentionallyBreak(69);
       break;
 
     //case 2: tic-tac-toe
