@@ -32,12 +32,9 @@ function ninePlusTen(){
   console.log();
 }
 
-function steelOrFeathers(){
-  //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
-  var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
-
+function steelOrFeathers(paramWeight){
   //what they put in
-  switch (weight) {
+  switch (paramWeight) {
     case "feathers":
       console.log("idiot");
       break;

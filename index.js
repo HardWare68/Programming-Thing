@@ -32,7 +32,9 @@ while (String(continueLoop).toLowerCase() == "true") {
       //lmao rolimon stuff doesnt work lol
 
       if(testing){
-        testFile.steelOrFeathers(); //I got a question for ya
+        //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
+        var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
+        testFile.steelOrFeathers(weight); //I got a question for ya
       } else {
         console.log("Testing is false. Skipping steelOrFeathers...");
       }
