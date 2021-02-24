@@ -45,7 +45,7 @@ function steelOrFeathers(paramWeight){
       return "Good job";
 
     default:
-      return "No";
+      return "no";
   }
   //prints a blank line just for neatness sake
   console.log();

@@ -6,6 +6,6 @@
   "sOFTesting": {
     "comment": "Testing data for steelOrFeathers",
     "inputs": ["steel", "feathers", "neither", "wood"],
-    "outputs": ["That's right. It's a kilogram o steel, because steel is heavier than feathers!", "idiot", "good job", "no"]
+    "outputs": ["That's right. It's a kilogram o steel, because steel is heavier than feathers!", "idiot", "Good job", "no"]
   }
 }
