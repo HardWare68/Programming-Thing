@@ -1,6 +1,11 @@
 const scanner = require('prompt-sync')({ sigint: true });
 const fs = require('fs'); //working with json can be found right in here: https://attacomsian.com/blog/nodejs-read-write-json-files
 
+//intentionally breaks the program. lol!
+function intentionallyBreak(){
+  //idk if its right or not, but it breaks. lol!
+  throw intentionalException;
+}
 
 function ninePlusTen(){
   //first, ask the user whats 9 + 10
@@ -27,26 +32,20 @@ function ninePlusTen(){
   console.log();
 }
 
-function steelOrFeathers(){
-  //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
-  var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
-
+function steelOrFeathers(paramWeight){
   //what they put in
-  switch (weight) {
+  switch (paramWeight) {
     case "feathers":
-      console.log("idiot");
-      break;
+      return "idiot";
     
     case "steel":
-      console.log("That's right. It's a kilogram o steel, because steel is heavier than feathers!");
-      break;
+      return "That's right. It's a kilogram o steel, because steel is heavier than feathers!";
     
     case "neither":
-      console.log("good job");
-      break;
+      return "Good job";
 
     default:
-      console.log("no");
+      return "no";
   }
   //prints a blank line just for neatness sake
   console.log();
@@ -68,4 +67,4 @@ function readJSON(){
 }
 
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, readJSON};
+module.exports = {ninePlusTen, steelOrFeathers, readJSON, intentionallyBreak};
