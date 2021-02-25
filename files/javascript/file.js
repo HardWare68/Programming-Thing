@@ -45,10 +45,10 @@ function steelOrFeathers(paramWeight){
   console.log();
 }
 
-function readJSON(){
+function readJSON(paramFile){
   try {
 
-    const data = fs.readFileSync('files/JSON/thisIsAFile.json', 'utf8');
+    const data = fs.readFileSync(paramFile, 'utf8');
 
     // parse JSON string to JSON object
     const jsonOBJ = JSON.parse(data);
