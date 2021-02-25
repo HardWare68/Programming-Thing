@@ -1,5 +1,5 @@
 const testFile = require("./files/javascript/file");
-const testingObj = testFile.readJSON('./files/JSON/thisIsAFile.json');
+const testingObj = testFile.readJSON('./files/JSON/testData.json');
 const sOFTests = testingObj.sOFTesting;
 const nPTTests = testingObj.nPTTesting;
 
