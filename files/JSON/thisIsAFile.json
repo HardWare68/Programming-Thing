@@ -7,5 +7,11 @@
     "comment": "Testing data for steelOrFeathers",
     "inputs": ["steel", "feathers", "neither", "wood"],
     "outputs": ["That's right. It's a kilogram o steel, because steel is heavier than feathers!", "idiot", "Good job", "no"]
+  },
+
+  "nPTTesting": {
+    "comment": "Testing data for ninePlusTen",
+    "inputs": [19, 21, 87, 69],
+    "outputs": ["Correct", "You stupid", "Was that the bite of 87?", "no"]
   }
 }
