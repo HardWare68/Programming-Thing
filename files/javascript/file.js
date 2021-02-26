@@ -7,26 +7,20 @@ function intentionallyBreak(){
   throw intentionalException;
 }
 
-function ninePlusTen(){
-  //first, ask the user whats 9 + 10
-  var num = Number(scanner("What's nine plus ten? "));
-
+function ninePlusTen(paramNumber){
   //select an outcome based on what they inputed
-  switch (num) {
+  switch (paramNumber) {
     case 19:
-      console.log("Correct");
-      break;
+      return "Correct";
 
     case 21:
-      console.log("You stupid");
-      break;
+      return "You stupid";
 
     case 87:
-      console.log("WAS THAT THE BITE OF 87");
-      break;
+      return "Was that the bite of 87?";
 
     default:
-      console.log("no");
+      return "no";
   }
   //prints a blank line just for neatness sake
   console.log();
@@ -51,10 +45,10 @@ function steelOrFeathers(paramWeight){
   console.log();
 }
 
-function readJSON(){
+function readJSON(paramFile){
   try {
 
-    const data = fs.readFileSync('files/JSON/thisIsAFile.json', 'utf8');
+    const data = fs.readFileSync(paramFile, 'utf8');
 
     // parse JSON string to JSON object
     const jsonOBJ = JSON.parse(data);

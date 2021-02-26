@@ -1,7 +1,7 @@
 {
   "name": "Programming-Thing",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collaborative programming project me and my friends are working on",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/HardWare68/Programming-Thing.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "HardWare68, BlaisinX",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HardWare68/Programming-Thing/issues"
