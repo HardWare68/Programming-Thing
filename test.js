@@ -4,7 +4,7 @@ const ticTacToe = require("./files/javascript/file");
 
 const sOFTests = testingObj.sOFTesting;
 const nPTTests = testingObj.nPTTesting;
-const tTTTests = tsetingObj.tTTTesting;
+const tTTTests = testingObj.tTTTesting;
 
 //test steelOrFeathers
 console.log("Testing steelOrFeathers...");
