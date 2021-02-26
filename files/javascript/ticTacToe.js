@@ -153,4 +153,4 @@ function ticTacToe(){
   }
 }
 
-module.exports = {ticTacToe, isGameWonFunction};
+module.exports = {ticTacToe, isGameWonFunction, isBoardFull};

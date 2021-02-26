@@ -1,6 +1,6 @@
 const testFile = require("./files/javascript/file");
 const testingObj = testFile.readJSON('./files/JSON/testData.json');
-const ticTacToe = require("./files/javascript/file");
+const ticTacToe = require("./files/javascript/ticTacToe");
 
 const sOFTests = testingObj.sOFTesting;
 const nPTTests = testingObj.nPTTesting;
@@ -46,7 +46,7 @@ console.log();
 //test ticTacToe.isBoardFullFunction
 console.log("Testing isBoardFullFunction...");
 for(var x = 0; x < tTTTests.iBFFTesting.inputs.length; x++){
-  if(ticTacToe.isBoardFullFunction(tTTTests.iBFFTesting.inputs[x]) != tTTTests.iBFFTesting.outputs[x]){
+  if(ticTacToe.isBoardFull(tTTTests.iBFFTesting.inputs[x]) != tTTTests.iBFFTesting.outputs[x]){
     console.log("Test condition " + tTTTests.iBFFTesting.inputs[x] + " failed!");
     testFile.intentionallyBreak();
   } else {
