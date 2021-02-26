@@ -11,5 +11,30 @@
     "comment": "Testing data for ninePlusTen",
     "inputs": [19, 21, 87, 69],
     "outputs": ["Correct", "You stupid", "Was that the bite of 87?", "no"]
+  },
+
+  "tTTTesting": {
+    "comment": "Testing data for ticTacToe",
+
+    "iGWFTesting": {
+      "comment": "Testing data for isGameWonFunction",
+      "inputs": [
+        [["X", "X", "X"],["X", "O", "O"],["O", "O", "X"]],
+        [["X", "O", "O"],["X", "O", "X"],["X", "X", "O"]],
+        [["X", "O", "O"],["O", "X", "O"],["O", "O", "X"]],
+        [["X", "O", "O"],["O", "X", "X"],["O", "X", "O"]]
+      ],
+      "outputs":[true, true, true, false]
+    },
+
+    "iBFFTesting":{
+      "comment": "Testing data for isBoardFullFunction",
+      "inputs":[
+        [["X", "X", "X"],["X", "O", "O"],["O", "O", "X"]],
+        [["X", "", "O"],["X", "O", "X"],["X", "X", ""]],
+        [["X", "O", ""],["O", "", "X"],["O", "X", ""]]
+      ],
+      "outputs": [true, false, false]
+    }
   }
 }

@@ -35,50 +35,50 @@ function isLegalMove(nextMoveParam){
 
 //function that checks if the board if full
 //im sorry that this if statement looks like a cancerous tumour
-function isBoardFull(){
-  if(gameBoard[0][0] != "" && gameBoard[0][1] != "" && gameBoard[0][2] != "" && gameBoard[1][0] != "" && gameBoard[1][1] != "" && gameBoard[1][2] != "" && gameBoard[2][0] != "" && gameBoard[2][1] != "" && gameBoard[2][2] != ""){
-    isBoardFullVar = true;
+function isBoardFull(paramGameBoard){
+  if(paramGameBoard[0][0] != "" && paramGameBoard[0][1] != "" && paramGameBoard[0][2] != "" && paramGameBoard[1][0] != "" && paramGameBoard[1][1] != "" && paramGameBoard[1][2] != "" && paramGameBoard[2][0] != "" && paramGameBoard[2][1] != "" && paramGameBoard[2][2] != ""){
+    return true;
   } else {
-    isBoardFullVar = false;
+    return false;
   }
 }
 
 //im sorry again
-function isGameWonFunction(){
+function isGameWonFunction(paramGameBoard){
     //if first row is equal
-    if(gameBoard[0][0] == gameBoard[0][1] && gameBoard[0][1] == gameBoard[0][2] && gameBoard[0][0] == gameBoard[0][2] && gameBoard[0][0] != "" && gameBoard[0][1] != "" && gameBoard[0][2] != ""){
-      isGameWonVar = true;
+    if(paramGameBoard[0][0] == paramGameBoard[0][1] && paramGameBoard[0][1] == paramGameBoard[0][2] && paramGameBoard[0][0] == paramGameBoard[0][2] && paramGameBoard[0][0] != "" && paramGameBoard[0][1] != "" && paramGameBoard[0][2] != ""){
+      return true;
     }
     //if second row is equal
-    else if(gameBoard[1][0] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[1][2] && gameBoard[1][0] == gameBoard[1][2] && gameBoard[1][0] != "" && gameBoard[1][1] != "" && gameBoard[1][2] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[1][0] == paramGameBoard[1][1] && paramGameBoard[1][1] == paramGameBoard[1][2] && paramGameBoard[1][0] == paramGameBoard[1][2] && paramGameBoard[1][0] != "" && paramGameBoard[1][1] != "" && paramGameBoard[1][2] != ""){
+      return true;
     }
     //if third row is equal
-    else if(gameBoard[2][0] == gameBoard[2][1] && gameBoard[2][1] == gameBoard[2][2] && gameBoard[2][0] == gameBoard[2][2] && gameBoard[2][0] != "" && gameBoard[2][1] != "" && gameBoard[2][2] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[2][0] == paramGameBoard[2][1] && paramGameBoard[2][1] == paramGameBoard[2][2] && paramGameBoard[2][0] == paramGameBoard[2][2] && paramGameBoard[2][0] != "" && paramGameBoard[2][1] != "" && paramGameBoard[2][2] != ""){
+      return true;
     }
     //if first column is equal
-    else if(gameBoard[0][0] == gameBoard[1][0] && gameBoard[1][0] == gameBoard[2][0] && gameBoard[0][0] == gameBoard[2][0] && gameBoard[0][0] != "" && gameBoard[1][0] != "" && gameBoard[2][0] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[0][0] == paramGameBoard[1][0] && paramGameBoard[1][0] == paramGameBoard[2][0] && paramGameBoard[0][0] == paramGameBoard[2][0] && paramGameBoard[0][0] != "" && paramGameBoard[1][0] != "" && paramGameBoard[2][0] != ""){
+      return true;
     }
     //if second column is equal
-    else if(gameBoard[0][1] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[2][1] && gameBoard[0][1] == gameBoard[2][1] && gameBoard[0][1] != "" && gameBoard[1][1] != "" && gameBoard[2][1] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[0][1] == paramGameBoard[1][1] && paramGameBoard[1][1] == paramGameBoard[2][1] && paramGameBoard[0][1] == paramGameBoard[2][1] && paramGameBoard[0][1] != "" && paramGameBoard[1][1] != "" && paramGameBoard[2][1] != ""){
+      return true;
     }
     //if third column is equal
-    else if(gameBoard[0][2] == gameBoard[1][2] && gameBoard[1][2] == gameBoard[2][2] && gameBoard[0][2] == gameBoard[2][2] && gameBoard[0][2] != "" && gameBoard[1][2] != "" && gameBoard[2][2] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[0][2] == paramGameBoard[1][2] && paramGameBoard[1][2] == paramGameBoard[2][2] && paramGameBoard[0][2] == paramGameBoard[2][2] && paramGameBoard[0][2] != "" && paramGameBoard[1][2] != "" && paramGameBoard[2][2] != ""){
+      return true;
     }
     //if top-left to bottom-right diagonal is equal
-    else if(gameBoard[0][0] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[2][2] && gameBoard[0][0] == gameBoard[2][2] && gameBoard[0][0] != "" && gameBoard[1][1] != "" && gameBoard[2][2] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[0][0] == paramGameBoard[1][1] && paramGameBoard[1][1] == paramGameBoard[2][2] && paramGameBoard[0][0] == paramGameBoard[2][2] && paramGameBoard[0][0] != "" && paramGameBoard[1][1] != "" && paramGameBoard[2][2] != ""){
+      return true;
     }
     //if top-right to bottom-left diagonal is equal
-    else if(gameBoard[0][2] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[2][0] && gameBoard[0][2] == gameBoard[2][0] && gameBoard[0][2] != "" && gameBoard[1][1] != "" && gameBoard[2][0] != ""){
-      isGameWonVar = true;
+    else if(paramGameBoard[0][2] == paramGameBoard[1][1] && paramGameBoard[1][1] == paramGameBoard[2][0] && paramGameBoard[0][2] == paramGameBoard[2][0] && paramGameBoard[0][2] != "" && paramGameBoard[1][1] != "" && paramGameBoard[2][0] != ""){
+      return true;
     }
     else{
-      isGameWonVar = false;
+      return false;
     }
     //im so sorry to all my programming friends who had to scroll through a thousand if statements
   }
@@ -129,10 +129,10 @@ function ticTacToe(){
     }
 
     //check if anyone has won
-    isGameWonFunction();
+    isGameWonVar = isGameWonFunction(gameBoard);
 
     //check if the board is full
-    isBoardFull();
+    isBoardFullVar = isBoardFull(gameBoard);
     if(isBoardFullVar){
       break;
     }
@@ -153,4 +153,4 @@ function ticTacToe(){
   }
 }
 
-module.exports = {ticTacToe};
+module.exports = {ticTacToe, isGameWonFunction};
