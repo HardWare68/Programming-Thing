@@ -1,5 +1,11 @@
 // /!\ please comment all your stuff please :^) /!\
 
+/*
+*
+* Bless this mess.
+*
+*/
+
 const testFile = require("./files/javascript/file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
 // stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
 const btnExit = require("./files/javascript/okay");
