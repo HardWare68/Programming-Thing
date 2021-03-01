@@ -119,7 +119,7 @@ function ticTacToe(){
       }
     }
 
-    //do the move. you know, put it to the gameBorad array or whatever
+    //do the move. you know, put it to the gameBoard array or whatever
     if(playerTurn == 1){
       gameBoard[nextMove[0]][nextMove[1]] = "O";
       playerTurn = 2;
