@@ -21,8 +21,7 @@ var continueLoop = true;
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
 
-  //if we are testing, skip asking for user input.
-  //this makes TravisCI work
+  //ask the user what they want to do
   var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"));
 
   switch (select) {
