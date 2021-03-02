@@ -12,11 +12,11 @@ const scanner = require('prompt-sync')({ sigint: true });
 //function that print the board
 //it do be printing
 function printBoard(){
-  console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2] + " | ");
+  console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2]);
   console.log("--------");
-  console.log(gameBoard[1][0] + " | " + gameBoard[1][1] + " | " + gameBoard[1][2] + " | ");
+  console.log(gameBoard[1][0] + " | " + gameBoard[1][1] + " | " + gameBoard[1][2]);
   console.log("--------");
-  console.log(gameBoard[2][0] + " | " + gameBoard[2][1] + " | " + gameBoard[2][2] + " | ");
+  console.log(gameBoard[2][0] + " | " + gameBoard[2][1] + " | " + gameBoard[2][2]);
 }
 
 //function that checks if the move is illegal
