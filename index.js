@@ -22,7 +22,7 @@ while (String(continueLoop).toLowerCase() == "true") {
   switch (select) {
     //case 1: testing random functions
     case 1:
-      btnExit.bananas(); //19 dollar fortnite gift card
+      btnExit.oranges(); //19 dollar fortnite gift card
       //rolimonStuff.rolimonRequest();
       //lmao rolimon stuff doesnt work lol
 
