@@ -18,7 +18,7 @@ function share(){
   }
 }
 
-function bananas(){
+function oranges(){
   console.log(fortniteCard[19]); //19 dollar fortnite card
   if(wants == "who"){ //who wants it?
     console.log("Yes, I'm giving it away.");
@@ -30,4 +30,4 @@ function bananas(){
   console.log(trolls.status);
 }
 
-module.exports = {bananas};
+module.exports = {oranges};
