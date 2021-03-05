@@ -1,5 +1,11 @@
 // /!\ please comment all your stuff please :^) /!\
 
+/*
+*
+* Bless this mess.
+*
+*/
+
 const testFile = require("./files/javascript/file"); //USE THIS TO IMPORT OTHER STUFF YOU HECKERS. FOLLOW THE EXAMPLE, OR THIS NIFTY URL:
 // stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
 const btnExit = require("./files/javascript/okay");
@@ -15,8 +21,7 @@ var continueLoop = true;
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
 
-  //if we are testing, skip asking for user input.
-  //this makes TravisCI work
+  //ask the user what they want to do
   var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"));
 
   switch (select) {

@@ -12,15 +12,28 @@ const scanner = require('prompt-sync')({ sigint: true });
 //function that print the board
 //it do be printing
 function printBoard(){
-  console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2] + " | ");
+  console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2]);
   console.log("--------");
-  console.log(gameBoard[1][0] + " | " + gameBoard[1][1] + " | " + gameBoard[1][2] + " | ");
+  console.log(gameBoard[1][0] + " | " + gameBoard[1][1] + " | " + gameBoard[1][2]);
   console.log("--------");
-  console.log(gameBoard[2][0] + " | " + gameBoard[2][1] + " | " + gameBoard[2][2] + " | ");
+  console.log(gameBoard[2][0] + " | " + gameBoard[2][1] + " | " + gameBoard[2][2]);
 }
 
 //function that checks if the move is illegal
-//when the move is wanted for 7 war crimes! :flushed:
+//when the move is SUS!
+/*
+* ⠀⠀⠀⡯⡯⡾⠝⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢊⠘⡮⣣⠪⠢⡑⡌
+* ⠀⠀⡀⠁⠀⠀⠀⡀⢂⠡⠈⡔⣕⢮⣳⢯⣿⣻⣟⣯⣯⢷⣫⣆⡂⠀⠀⢐⠑⡌
+*⣬⠂⠀⠀⢀⢂⢪⠨⢂⠥⣺⡪⣗⢗⣽⢽⡯⣿⣽⣷⢿⡽⡾⡽⣝⢎⠀⠀⠀⢡
+*⣿⠀⠀⠀⠢⢑⠠⠑⠕⡝⡎⡗⡝⡎⣞⢽⡹⣕⢯⢻⠹⡹⢚⠝⡷⡽⡨⠀⠀⢔
+*⣿⣽⠀⡀⡊⠀⠐⠨⠈⡁⠂⢈⠠⡱⡽⣷⡑⠁⠠⠑⠀⢉⢇⣤⢘⣪⢽⠀⢌⢎
+*⣿⡗⠀⠢⠡⡱⡸⣔⢵⢱⢸⠈⠀⡪⣳⣳⢹⢜⡵⣱⢱⡱⣳⡹⣵⣻⢔⢅⢬⡷
+*⣷⣻⣅⠑⢌⠢⠁⢐⠠⠑⡐⠐⠌⡪⠮⡫⠪⡪⡪⣺⢸⠰⠡⠠⠐⢱⠨⡪⡪⡰
+*⣿⢽⡾⢹⡄⠕⡅⢇⠂⠑⣴⡬⣬⣬⣆⢮⣦⣷⣵⣷⡗⢃⢮⠱⡸⢰⢱⢸⢨⢌
+*⡯⣟⣞⡇⡿⣽⡪⡘⡰⠨⢐⢀⠢⢢⢄⢤⣰⠼⡾⢕⢕⡵⣝⠎⢌⢪⠪⡘⡌⠀
+*⠁⡂⠔⡁⡢⠣⢀⠢⠀⠅⠱⡐⡱⡘⡔⡕⡕⣲⡹⣎⡮⡏⡑⢜⢼⡱⢩⣗⣯⣟
+*⢀⠢⡑⡀⢂⢊⠠⠁⡂⡐⠀⠅⡈⠪⠪⠪⠣⠫⠑⡁⢔⠕⣜⣜⢦⡰⡎⡯⡾⡽
+*/
 function isLegalMove(nextMoveParam){
   try {
     if(gameBoard[nextMoveParam[0]][nextMoveParam[1]] == ""){
@@ -98,11 +111,11 @@ function ticTacToe(){
 
     //loop until they give us a legal move
     while(!isLegalMoveVar){
-      //prompt user for input
+      //prompt user for input and split it into an array
       var nextMoveOne = scanner("Enter your move! (Format it like so: \"row,column\")").split(",");
 
-      //get the next move, and hopefully split it into an array
-      //with correct regex. how the hell do i even regex????
+        //try and parse some integers
+        //if there are no integers, then its an illegal move
         try {
           nextMove[0] = parseInt(nextMoveOne[0]);
           nextMove[1] = parseInt(nextMoveOne[1]);
@@ -119,7 +132,7 @@ function ticTacToe(){
       }
     }
 
-    //do the move. you know, put it to the gameBorad array or whatever
+    //do the move. you know, put it to the gameBoard array or whatever
     if(playerTurn == 1){
       gameBoard[nextMove[0]][nextMove[1]] = "O";
       playerTurn = 2;
