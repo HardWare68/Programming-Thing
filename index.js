@@ -11,6 +11,7 @@ const testFile = require("./files/javascript/file"); //USE THIS TO IMPORT OTHER 
 const btnExit = require("./files/javascript/okay");
 const rolimonStuff = require("./files/javascript/rolimonStuff");
 const ticTacToe = require("./files/javascript/ticTacToe");
+const subparRPG = require("./files/javascript/subparRPG");
 
 const scanner = require('prompt-sync')({ sigint: true }); //USE THIS TO GET INPUT. NIFTY URL: https://www.codecademy.com/articles/getting-user-input-in-node-js
 
@@ -22,7 +23,7 @@ var continueLoop = true;
 while (String(continueLoop).toLowerCase() == "true") {
 
   //ask the user what they want to do
-  var select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!"));
+  let select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!\n3.)Subpar RPG!"));
 
   switch (select) {
     //case 1: testing random functions

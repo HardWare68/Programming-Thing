@@ -64,5 +64,30 @@ function readJSON(paramFile){
   }
 }
 
+/*
+*   Writes to a json file.
+*   Parameters:
+*     paramFile: The file location you wish to write to.
+*     paramObj: The object you wish to write to the file.
+*/
+
+// look at me fancy-ly commenting my code ^
+function writeJSON(paramFile, paramObj){
+  
+try {
+
+    // convert JSON object to a string
+    const data = JSON.stringify(paramObj, null, 4);
+
+    // write file to disk
+    fs.writeFileSync(paramFile, data, 'utf8');
+
+    console.log(`File is written successfully!`);
+
+} catch (err) {
+    console.log(`Error writing file: ${err}`);
+}
+}
+
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, readJSON, intentionallyBreak, ethanIsDumb};
+module.exports = {ninePlusTen, steelOrFeathers, writeJSON, readJSON, intentionallyBreak, ethanIsDumb};
