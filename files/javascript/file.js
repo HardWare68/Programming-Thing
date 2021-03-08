@@ -26,6 +26,10 @@ function ninePlusTen(paramNumber){
   console.log();
 }
 
+function ethanIsDumb(){
+  return 2+3*4;
+}
+
 function steelOrFeathers(paramWeight){
   //what they put in
   switch (paramWeight) {
@@ -61,4 +65,4 @@ function readJSON(paramFile){
 }
 
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, readJSON, intentionallyBreak};
+module.exports = {ninePlusTen, steelOrFeathers, readJSON, intentionallyBreak, ethanIsDumb};
