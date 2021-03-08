@@ -42,6 +42,10 @@ while (String(continueLoop).toLowerCase() == "true") {
     case 2:
       ticTacToe.ticTacToe();
       break;
+
+    case 3:
+      subparRPG.mainRPG();
+      break;
   }
 
   //ask if they wanna continue or not
