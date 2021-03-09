@@ -15,7 +15,7 @@ function addUser(){
     level: 1
   }};
 
-  var currentDB = testFile.readJSON("./files/JSON/RPGUserData.json");
+  var currentDB = JSON.parse(testFile.readJSON("./files/JSON/RPGUserData.json"));
   currentDB.push(user);
 
   testFile.writeJSON("./files/JSON/RPGUserData.json", currentDB);
@@ -27,24 +27,27 @@ function addUser(){
 function mainRPG(){
   //load up the user's info
   getUsers();
-
-  let select = Number(scanner("Select what you want to do!\n1.)Go adventure!\n2.)Visit the shop.\n255.)Exit "));
-  switch(select){
-    case 1:
-      //add adventure stuff, this is where combat will take place
-      console.log("hi lol");
-      break;
-    
-    case 2:
-      //add a shop, so you can get better equipment and stuff
-      console.log("hi lol");
-      break;
+  let select = 0;
+  while(select != 255){
+    select = Number(scanner("Select what you want to do!\n1.)Go adventure!\n2.)Visit the shop.\n255.)Exit "));
+    switch(select){
+      case 1:
+        //add adventure stuff, this is where combat will take place
+        console.log("hi lol");
+        break;
+      
+      case 2:
+        //add a shop, so you can get better equipment and stuff
+        console.log("hi lol");
+        break;
+    }
   }
 }
 
 function getUsers(){
-  let decision = "true";
+  var decision = "true";
   let accFoundFlag = false;
+
   while(decision == "true"){
     //ask the user for their username
     let username = String(scanner("Enter your username. "));
@@ -52,7 +55,6 @@ function getUsers(){
     //get the database of users, and put it into an array
     const usersFile = testFile.readJSON('./files/JSON/RPGUserData.json');
     const usersArray = Object.entries(usersFile);
-    console.log(usersArray);
 
     //cycle through the array, looking for a match
     for(x=0; x<usersArray.length; x++){
@@ -63,13 +65,19 @@ function getUsers(){
         break;
       }
     }
-    //god JS is dumb
-    if(accFoundFlag){break}
-    let decision = String(scanner("No user found with that username...\nDo you wish to create an account, or try again? (Enter true if you wish to try again.)")).toLowerCase();
+
+    //if no account was found, ask if they wish to try again.
+    //if account was found, then break
+    if(!accFoundFlag){
+      decision = String(scanner("No account found with that username... Do you wish to create an account, or try again? (Enter true if you wish to try again.)")).toLowerCase();
+      console.log(decision);
+    } else {break;}
   }
+
   //god JS is dumb
-  if(accFoundFlag){break}
-  addUser();
+  if(!accFoundFlag){
+    addUser();
+  }
 }
 
 module.exports = {mainRPG};
