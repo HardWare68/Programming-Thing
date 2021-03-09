@@ -35,6 +35,7 @@ while (String(continueLoop).toLowerCase() == "true") {
       //I got a question for you: what's heavier, a kilogram o steel o a kilogram o feathers?
       var weight = String(scanner("I got a question for ya, what's heavier: a kilogramme of steel o a kilogramme o feathers?")).toLowerCase();
       console.log(testFile.steelOrFeathers(weight));
+      
       console.log(testFile.ethanIsDumb());
       break;
 

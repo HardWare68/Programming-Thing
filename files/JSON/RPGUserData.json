@@ -2,5 +2,10 @@
   "user1": {
     "username": "testUser",
     "level": 1
+  },
+
+  "user2": {
+    "username": "testUser2",
+    "level": 1
   }
 }
