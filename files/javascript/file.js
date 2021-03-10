@@ -73,20 +73,18 @@ function readJSON(paramFile){
 
 // look at me fancy-ly commenting my code ^
 function writeJSON(paramFile, paramObj){
-  
-try {
+  try {
+      // convert JSON object to a string
+      const data = JSON.stringify(paramObj, null, 4);
 
-    // convert JSON object to a string
-    const data = JSON.stringify(paramObj, null, 4);
+      // write file to disk
+      fs.writeFileSync(paramFile, data, 'utf8');
 
-    // write file to disk
-    fs.writeFileSync(paramFile, data, 'utf8');
+      console.log(`File is written successfully!`);
 
-    console.log(`File is written successfully!`);
-
-} catch (err) {
-    console.log(`Error writing file: ${err}`);
-}
+  } catch (err) {
+      console.log(`Error writing file: ${err}`);
+  }
 }
 
 //export this bad boy
