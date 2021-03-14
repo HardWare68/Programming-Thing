@@ -22,8 +22,6 @@ function ninePlusTen(paramNumber){
     default:
       return "no";
   }
-  //prints a blank line just for neatness sake
-  console.log();
 }
 
 function ethanIsDumb(){
@@ -45,8 +43,6 @@ function steelOrFeathers(paramWeight){
     default:
       return "no";
   }
-  //prints a blank line just for neatness sake
-  console.log();
 }
 
 function readJSON(paramFile){

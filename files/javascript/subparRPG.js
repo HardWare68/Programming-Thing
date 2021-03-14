@@ -9,15 +9,23 @@ const scanner = require('prompt-sync')({ sigint: true });
 *   Adds a user to the RPGUserData.json file.
 */
 function addUser(){
+  //create all the info for the user's profile
   let username = String(scanner("Enter your username! "));
   let user = { "user": {
-    username: username,
-    level: 1
+    "username": username,
+    "level": 1
   }};
 
-  var currentDB = JSON.parse(testFile.readJSON("./files/JSON/RPGUserData.json"));
+  //grab the current file and add the new user to that info
+  console.log("havent grabbed current db");
+  var currentDB = testFile.readJSON('./files/JSON/RPGUserData.json');
+  console.log(currentDB);
+  currentDB = Object.entries(currentDB);
   currentDB.push(user);
+  console.log("pushed the new thing");
+  currentDB = JSON.parse(currentDB);
 
+  //push the new data to the file
   testFile.writeJSON("./files/JSON/RPGUserData.json", currentDB);
 }
 
@@ -27,6 +35,7 @@ function addUser(){
 function mainRPG(){
   //load up the user's info
   getUsers();
+  
   let select = 0;
   while(select != 255){
     select = Number(scanner("Select what you want to do!\n1.)Go adventure!\n2.)Visit the shop.\n255.)Exit "));
