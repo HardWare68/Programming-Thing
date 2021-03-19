@@ -40,3 +40,4 @@ while (String(continueLoop).toLowerCase() == "true") {
   //ask if they wanna continue or not
   continueLoop = scanner('Do you wish to continue? Enter "true" or "false." ');
 }
+console.log("hi");
