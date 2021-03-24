@@ -37,6 +37,8 @@ while (String(continueLoop).toLowerCase() == "true") {
       console.log(testFile.steelOrFeathers(weight));
 
       console.log(testFile.ethanIsDumb());
+
+      console.log(testFile.testConsoleClear());
       break;
 
     //case 2: tic-tac-toe
