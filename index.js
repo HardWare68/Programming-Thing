@@ -22,6 +22,9 @@ var continueLoop = true;
 //otherwhise, its gonna exit the loop and terminate the program
 while (String(continueLoop).toLowerCase() == "true") {
 
+  //clear the console every time we go through this to make it look clean
+  console.clear();
+
   //ask the user what they want to do
   let select = Number(scanner("What do you want to do?\n1.)Testing random stuff\n2.)Tic-tac-toe!\n3.)Subpar RPG!"));
 
