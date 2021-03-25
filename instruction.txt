@@ -1,8 +1,8 @@
 instructions on how to do stuff:
 
 step one.) Create an account on repl.it. Repl is just a very easy thing to code from your browser
-Step two.) Visit the replit link, then create a fork. This will allow you to make your own copy of the code and edit it from there
 Step 3.) Also create your own fork of the Github Repo. By this, I don't mean create a branch, but rather to actually fork the repository. This'll allow you to connect the repo to repl.it, which should make life a good amount easier.
+Step 3 and a half.) Go to the main page of repl.it, and connect your GitHub account to it. Then, you should be able to like, open the GitHub repo from Replit. Open up your fork of the repository, and go from there.
 Step 4.) When you want to push to your repo, go to "Version Control" on the left and commit and push.
 Step 5.) When you want to merge across forks, just open a pull request on GitHub or something. idk
 Step 6.) ???
@@ -11,3 +11,5 @@ Step 7.) Profit
 instructions on testing:
 make your function
 pester me to set up the function with testing stuff (supplying inputs and outputs would be much helpful)
+
+Ask around if you have any questions, and yeah. have fun.

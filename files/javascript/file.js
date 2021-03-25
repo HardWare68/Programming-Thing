@@ -83,5 +83,10 @@ function writeJSON(paramFile, paramObj){
   }
 }
 
+function testConsoleClear(){
+  console.clear();
+  return "Oppa gangnam style!";
+}
+
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, writeJSON, readJSON, intentionallyBreak, ethanIsDumb};
+module.exports = {ninePlusTen, steelOrFeathers, writeJSON, readJSON, intentionallyBreak, ethanIsDumb, testConsoleClear};

@@ -1,4 +1,4 @@
-﻿blocks = int(input("Enter the number of blocks: "))
+blocks = int(input("Enter the number of blocks: "))
 
 while blocks>height:
     height += 1

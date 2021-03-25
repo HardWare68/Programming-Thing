@@ -12,6 +12,7 @@ const scanner = require('prompt-sync')({ sigint: true });
 //function that print the board
 //it do be printing
 function printBoard(){
+  console.clear();
   console.log(gameBoard[0][0] + " | " + gameBoard[0][1] + " | " + gameBoard[0][2]);
   console.log("--------");
   console.log(gameBoard[1][0] + " | " + gameBoard[1][1] + " | " + gameBoard[1][2]);
