@@ -1,1 +1,1 @@
-print"lmao"
+print("lmao")
