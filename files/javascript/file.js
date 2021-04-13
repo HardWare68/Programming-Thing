@@ -1,4 +1,3 @@
-const scanner = require('prompt-sync')({ sigint: true });
 const fs = require('fs'); //working with json can be found right in here: https://attacomsian.com/blog/nodejs-read-write-json-files
 
 //intentionally breaks the program. lol!
