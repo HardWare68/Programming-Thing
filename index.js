@@ -42,6 +42,8 @@ while (String(continueLoop).toLowerCase() == "true") {
       console.log(testFile.ethanIsDumb());
 
       console.log(testFile.testConsoleClear());
+      
+      console.log(testFile.theTruth());
       break;
 
     //case 2: tic-tac-toe

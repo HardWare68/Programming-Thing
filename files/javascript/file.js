@@ -7,6 +7,10 @@ function intentionallyBreak(){
   throw intentionalException;
 }
 
+function theTruth(){
+  return "Average CollabDiscordBot fan\nAverage Programming Thing enjoyer";
+}
+
 function ninePlusTen(paramNumber){
   //select an outcome based on what they inputed
   switch (paramNumber) {
@@ -89,4 +93,4 @@ function testConsoleClear(){
 }
 
 //export this bad boy
-module.exports = {ninePlusTen, steelOrFeathers, writeJSON, readJSON, intentionallyBreak, ethanIsDumb, testConsoleClear};
+module.exports = {ninePlusTen, steelOrFeathers, writeJSON, readJSON, intentionallyBreak, ethanIsDumb, testConsoleClear, theTruth};
